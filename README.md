@@ -10,7 +10,7 @@ Scondrel is played with a standart deck of playing cards with Red Face Cards and
 ### Rules
 - The 26 **Clubs** and **Spades** in the deck are **Monsters**. Their damage is equal to their ordered value (T is 10, J is 11, Q is 12, K is 13 and A is 14).
 - The 9 **Diamonds** in the deck are **Weapons**. Each weapon does as much damage as its value. All weapons in Scoundrel are binding, meaning if you pick one up, you equip it, and discard your previous weapon.
-- The 9 **Hearts** int the deck are **Health Potions**. You may only use one health potion each turn, even if you pull two. The second potion you pull is simply discarded. You may not restore your life beyond your starting 20 health.
+- The 9 **Hearts** in the deck are **Health Potions**. You may only use one health potion each turn, even if you pull two. The second potion you pull is simply discarded. You may not restore your life beyond your starting 20 health.
 ### Gameplay
 There are 4 cards dealt for each **Room**. You may avoid the room by typing 'r'. If you choose to do so, the cards in the room are placed on the bottom of the deck and a new room is drawn. You can avoid as many Rooms as you like, but you cannot avoid two rooms in a row.  
 If you choose not to avoid the room, one by one you must face 3 of the 4 cards it contains by typing the index of the card (1-4).
@@ -20,9 +20,14 @@ The weapon will be equipped, and the previous weapon will be discarded.
 Its number will be added to your health and will be discarded. Your health cannot exceed 20, and you cannot use more than one health potion per turn. If you choose two health potions in a turn the second one will simply be discarded, without healing you.
 - If you choose a **Monster**:  
 You can either fight with your *weapon* or can fight *barehanded* by adding a b next to your choice (for example: 2b).  
-    - If you choose to fight the monster *barehanded*, its value will be substracted from your health and the card will be discarded.
-    - If you choose to fight the monster with your equipped *weapon*, its value will be substracted from your equipped weapon and the remaining value will be substracted from your health. The card will be put on top of your weapon. You will retain your weapon however the weapon can then only be used against monsters of a *lower value (less than equal)* than the previous monster it had slain.
-Once you have chosen 3 cards, your turn is complete. The fourth card is untouched and a new room will be drawn.
+    - If you choose to fight the monster *barehanded*, its value will be substracted from your health and the card will be discarded.  
+    - If you choose to fight the monster with your equipped *weapon*, its value will be substracted from your equipped weapon and the remaining value will be substracted from your health. The card will be put on top of your weapon. You will retain your weapon however the weapon can then only be used against monsters of a *lower value (less than equal)* than the previous monster it had slain.  
+Once you have chosen 3 cards, your turn is complete. The fourth card is untouched and a new room will be drawn. 
+### Scoring
+Once you cleared all the cards in the deck or died trying your score is calculated.  
+- If your life has reached zero, your score is the negative of the sum of values of all the monster cards in the deck.  
+- If you made your way through the entire dungeon, your score is your health, plus if the last card is a health potion its value added to your score.  
+### Manual
 You can also refer to [Scoundrel Manual](http://www.stfj.net/art/2011/Scoundrel.pdf)
  
 ## Build and Run

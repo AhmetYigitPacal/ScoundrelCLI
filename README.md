@@ -23,13 +23,13 @@ You can either fight with your *weapon* or can fight *barehanded* by adding a b 
     - If you choose to fight the monster *barehanded*, its value will be substracted from your health and the card will be discarded.
     - If you choose to fight the monster with your equipped *weapon*, its value will be substracted from your equipped weapon and the remaining value will be substracted from your health. The card will be put on top of your weapon. You will retain your weapon however the weapon can then only be used against monsters of a *lower value (less than equal)* than the previous monster it had slain.
 Once you have chosen 3 cards, your turn is complete. The fourth card is untouched and a new room will be drawn.
-You can refer to [Scoundrel Manual](http://www.stfj.net/art/2011/Scoundrel.pdf)
+You can also refer to [Scoundrel Manual](http://www.stfj.net/art/2011/Scoundrel.pdf)
  
 ## Build and Run
 ### Requirements
 - A C Compiler (GCC recommended)
 ### Compile
-`gcc -Wall -Wextra -o scoundrel scoundrel.c deck.c`
+`gcc -Wall -Wextra -o scoundrel main.c deck.c`
 ### Run
 `./scoundrel`
 

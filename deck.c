@@ -34,9 +34,10 @@ void print_discard_pile(const Deck* deck) {
 void init_deck(Deck* deck) {
     deck->top = 52;
     for(int i = 0; i < 4; ++i) {
-        for(int j = 0; j < 13; ++j) {
-            deck->cards[13 * i + j] = (Card){.suit = i, .rank = j + 2};
+        for(int j = 1; j < 13; ++j) {
+            deck->cards[13 * i + j] = (Card){.suit = i, .rank = j + 1};
         }
+        deck->cards[13 * i] = (Card){.suit = i, .rank = A};
     }
 }
 

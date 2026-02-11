@@ -6,15 +6,9 @@ typedef enum {
     DIAMONDS, HEARTS
 } Suit;
 
-#ifdef A14
 typedef enum {
     J = 11, Q, K, A
 } Rank;
-#else
-typedef enum {
-    A = 1, J = 11, Q, K
-} Rank;
-#endif
 
 typedef enum {
     BLACK, RED

@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-#define A14
 #include "deck.h"
 
 int main() {

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+
+#define A14
 #include "deck.h"
 
 const char* ANSI_RESET = "\033[0m";
@@ -34,10 +36,9 @@ void print_discard_pile(const Deck* deck) {
 void init_deck(Deck* deck) {
     deck->top = 52;
     for(int i = 0; i < 4; ++i) {
-        for(int j = 1; j < 13; ++j) {
-            deck->cards[13 * i + j] = (Card){.suit = i, .rank = j + 1};
+        for(int j = 2; j <= 14; ++j) {
+            deck->cards[13 * i + j - 2] = (Card){.suit = i, .rank = j};
         }
-        deck->cards[13 * i] = (Card){.suit = i, .rank = A};
     }
 }
 
